@@ -5,11 +5,11 @@ plugins {
 
 
 android {
-    namespace = "com.example.android_ci_cd"
+    namespace = "com.example.ecommerce.android_ci_cd"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.android_ci_cd"
+        applicationId = "com.example.ecommerce.android_ci_cd"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
