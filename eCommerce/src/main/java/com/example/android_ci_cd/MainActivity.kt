@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
             AndroidCICDTheme {
                 Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                     Text(
-                        text = "Hello Android App CI/CD!"
+                        text = "Hello Android E-COMMERCE CI/CD!"
                     )
                 }
             }
