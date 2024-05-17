@@ -64,7 +64,7 @@ jobs:
         run: echo "apkfile=$(find eCommerce/build/outputs/apk/release/*.apk)" >> $GITHUB_OUTPUT
 
       - name: Upload Enterprise APK to Firebase App Distribution
-        if: github.event.inputs.module == Enterprise
+        if: ${{ github.event.inputs.module }} == Enterprise
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
           appId: ${{secrets.FIREBASE_APP_ID_RELEASE}}
@@ -73,7 +73,7 @@ jobs:
           file: ${{ steps.enterpriseApk.outputs.apkfile }}
 
       - name: Upload Release Build to Artifacts
-        if: github.event.inputs.module == E-Commerce
+        if: ${{ github.event.inputs.module }} == E-Commerce
         uses: actions/upload-artifact@v4
         with:
           name: release-artifacts
