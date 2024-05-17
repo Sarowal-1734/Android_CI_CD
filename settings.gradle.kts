@@ -20,5 +20,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Android CI-CD"
-include(":app")
+include(":enterprise")
 include(":eCommerce")
