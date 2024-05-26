@@ -1,11 +1,6 @@
 name: App Development Pipeline
 on:
   workflow_dispatch:
-    inputs:
-      release_notes:
-        type: string
-        required: true
-        description: "Release Notes"
 
 jobs:
   build:
